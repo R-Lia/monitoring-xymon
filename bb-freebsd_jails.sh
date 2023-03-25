@@ -12,6 +12,7 @@
 TEST="jails"	# Test name
 
 ##### Script
+# grep -v invert the sense of matching (take all the lines that don't match the following word)
 SERVERNODES=`jls | $GREP -v JID | $WC | $SED -e 's/\ //g'`
 
 ##### Send to Xymon server
