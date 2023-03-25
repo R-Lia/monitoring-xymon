@@ -88,13 +88,13 @@ def has_changed(timestamp_last, hash_last_line, history_type, blue_stdout, times
 # Create a parser 
 parser = argparse.ArgumentParser()
 
-# Add an optional positional argument 
+# Add an optional positional argument, nargs is the number of times the argument can be used
 parser.add_argument("category",help="a list separated by comma of the categories (install,remove,upgrade) you want to monitor", nargs='?')
 
 # Add an optional flag with a mandatory value
 parser.add_argument("-r",help="alias of the host in hosts.cfg")
 
-# Parse the argument 
+# Parse the argument and place them in a argparse.Namespace object:
 arguments=parser.parse_args()
 
 # If the optional flag r is initialized then change bbmachine_name, the name used to interrogate xymondboard
