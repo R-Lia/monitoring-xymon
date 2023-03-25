@@ -107,7 +107,7 @@ Goal :
 When disabled manually, the test will remain blue until a change is detected. This change is detected by asking xymon server via xymondboard.  
 
 Parameters :
-* category : a list separated by comma of complete paths to a specific repository (optional) 
+* repositories : a list separated by comma of complete paths to a specific repository (optional) 
 * -r [hostname] : alias (if any) created in the hosts.cfg file. Used to interrogate xymondboard (optional)
 * -h : help and exit (optional)
 
@@ -128,7 +128,7 @@ Goal :
 When disabled manually, the test will remain blue until a change is detected. This change is detected by asking xymon server via xymondboard.  
 
 Parameters :
-* repository : a list separated by comma of the categories of packages you want to monitor (upgrade,remove,install) (optional) 
+* monitoredCategories : a list separated by comma of the categories of packages you want to monitor (upgrade,remove,install) (optional) 
 * -r [hostname] : alias (if any) created in the hosts.cfg file. Used to interrogate xymondboard (optional)
 * -h : help and exit (optional)
 
