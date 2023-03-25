@@ -47,7 +47,7 @@ do
 			help
 			exit
 			;;
-		r)
+		m)
 			if ["`echo ${OPTARG} | egrep '^([.-_a-zA-Z0-9])+$'`" == '']; then
 				echo "Invalid hostname parameter"
 				exit
